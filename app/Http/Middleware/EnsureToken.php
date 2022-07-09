@@ -16,9 +16,9 @@ class EnsureToken
      */
     public function handle(Request $request, Closure $next)
     {   
-        if($request->input('token') !== 'The safe word'){
-            return redirect('home')
-        }
+        // if($request->input('token') !== 'The safe word'){
+        //     return redirect('home')
+        // }
         return $next($request);
     }
 }
